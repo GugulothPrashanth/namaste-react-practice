@@ -1,0 +1,32 @@
+{
+  "name": "namaste-react-practice",
+  "version": "1.0.0",
+  "description": "This is react project by Prashanth",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GugulothPrashanth/namaste-react-practice.git"
+  },
+  "keywords": [
+    "react",
+    "practice"
+  ],
+  "author": "Prashanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GugulothPrashanth/namaste-react-practice/issues"
+  },
+  "homepage": "https://github.com/GugulothPrashanth/namaste-react-practice#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -23,16 +23,38 @@
 //     React.createElement("h2", { id: "h2" }, "im h2 tag"),
 //   ]),
 // ]);
-const heading = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", { id: "head" }, "H1 from React"),
-    React.createElement("h1", { id: "head" }, "H1 from React"),
-  ]),
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", { id: "head" }, "H1 from React"),
-    React.createElement("h1", { id: "head" }, "H1 from React"),
-  ]),
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// const heading = React.createElement("div", { id: "parent" }, [
+//   React.createElement("div", { id: "child1" }, [
+//     React.createElement("h1", { id: "head" }, "H1 from React"),
+//     React.createElement("h1", { id: "head" }, "H1 from React"),
+//   ]),
+//   React.createElement("div", { id: "child1" }, [
+//     React.createElement("h1", { id: "head" }, "H1 from React"),
+//     React.createElement("h1", { id: "head" }, "H1 from React"),
+//   ]),
+// ]);
+
+// React Element
+const heading = (
+  <h1 className="Heading" tabIndex={5}>
+    hello world from jsx!
+  </h1>
+);
+
+// React Functional component
+// Component Compositions
+
+const HeadingComponent = () => {
+  return (
+    <div>
+      {heading}
+      <h1 className="heading">Hello From Functional component</h1>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<HeadingComponent />);
